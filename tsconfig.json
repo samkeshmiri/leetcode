@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "target": "es2021",
+    "module": "commonjs",
+    "experimentalDecorators": true
+  }
+}
