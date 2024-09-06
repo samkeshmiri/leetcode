@@ -7,14 +7,15 @@
 
 function maxProfit(prices: number[]): number {
   let maxProfit = 0;
-  let currentStock = prices[0];
+  let purchasePrice = prices[0];
 
   for (let i = 1; i < prices.length; i++) {
-    const currentProfit = prices[i] - currentStock;
+    const currentPrice = prices[i];
+    const currentProfit = currentPrice - purchasePrice;
     maxProfit = Math.max(currentProfit, maxProfit);
 
-    if (currentStock > prices[i]) {
-      currentStock = prices[i];
+    if (purchasePrice > currentPrice) {
+      purchasePrice = currentPrice;
     }
   }
 
