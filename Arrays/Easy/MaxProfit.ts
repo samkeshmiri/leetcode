@@ -11,10 +11,7 @@ function maxProfit(prices: number[]): number {
 
   for (let i = 1; i < prices.length; i++) {
     const currentProfit = prices[i] - currentStock;
-    if (currentProfit > maxProfit) {
-      maxProfit = currentProfit;
-      continue;
-    }
+    maxProfit = Math.max(currentProfit, maxProfit);
 
     if (currentStock > prices[i]) {
       currentStock = prices[i];
