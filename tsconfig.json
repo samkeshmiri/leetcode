@@ -4,6 +4,7 @@
     "emitDecoratorMetadata": true,
     "target": "es2021",
     "module": "commonjs",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "moduleDetection": "force"
   }
 }
