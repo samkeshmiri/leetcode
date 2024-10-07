@@ -69,8 +69,11 @@ function intToRomanEfficient(num: number): string {
   };
 
   let ans = "";
-  for (let key of Object.keys(map).reverse()) { // reverse because Object.keys returns asc lexicographic order of keys
+  for (let key of Object.keys(map).reverse()) {
+    // reverse because Object.keys returns asc lexicographic order of keys
     let value = parseInt(key);
+
+    if (num === 0) break;
 
     while (num >= value) {
       ans += map[value];
@@ -81,7 +84,7 @@ function intToRomanEfficient(num: number): string {
   return ans;
 }
 
-// console.log(intToRomanEfficient(99));
+console.log(intToRomanEfficient(99));
 
 function intToRomanNoLoop(num: number): string {
   const romans = {
@@ -105,4 +108,4 @@ function intToRomanNoLoop(num: number): string {
   );
 }
 
-console.log(intToRomanNoLoop(123));
+// console.log(intToRomanNoLoop(123));
