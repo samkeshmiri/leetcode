@@ -4,13 +4,14 @@ function increasingTriplet(nums: number[]): boolean {
 
   for (const num of nums) {
     if (lowest >= num) {
+      // when we loop through the array anytime we find a number lower than our lowest, we set it to give ourselves higher chance of finding increasing values
       // first pass means it will set it and 'restart' the trend
       lowest = num;
     } else if (middle >= num) {
-      // whenever it is higher, set it
+      // if the current middle number is greater (we want it to be lower) then we set it to give ourselves higher chance of finding the 3rd value which is higher
       middle = num;
     } else {
-      // this third number is increasing, therefore we have found an upward trend
+      // this third number is greater than lowest and middle, therefore we have found an upward trend
       return true;
     }
   }
