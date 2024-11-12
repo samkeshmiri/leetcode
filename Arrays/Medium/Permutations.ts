@@ -1,6 +1,7 @@
 function permute(nums: number[]): number[][] {
   let result = [];
   let solution = [];
+  let visited = new Array<boolean>(nums.length);
 
   function backtrack() {
     if (solution.length == nums.length) {
@@ -8,13 +9,16 @@ function permute(nums: number[]): number[][] {
       return result;
     }
 
-    for (const num of nums) {
-      if (solution.includes(num)) {
+    for (let i = 0; i < nums.length; i++) {
+      if (visited[i]) {
         continue;
       }
-      solution.push(num);
+
+      solution.push(nums[i]);
+      visited[i] = true;
       backtrack();
       solution.pop();
+      visited[i] = false;
     }
   }
 
