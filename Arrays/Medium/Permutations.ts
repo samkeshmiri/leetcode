@@ -11,6 +11,7 @@ function permute(nums: number[]): number[][] {
 
     for (let i = 0; i < nums.length; i++) {
       if (visited[i]) {
+        // need to track because we do not want to reuse a number
         continue;
       }
 
