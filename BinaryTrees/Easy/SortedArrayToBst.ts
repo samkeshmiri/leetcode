@@ -1,3 +1,5 @@
+// 108. Convert Sorted Array to Binary Search Tree
+
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -21,7 +23,7 @@ function sortedArrayToBST(nums: number[]): TreeNode | null {
     return root;
   }
 
-  return insert(0, nums.length);
+  return insert(0, nums.length - 1);
 }
 
 console.log(sortedArrayToBST([0, 1, 2, 3, 4, 5]));
