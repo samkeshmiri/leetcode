@@ -23,10 +23,11 @@ function canJump(nums: number[]): boolean {
 function canJumpGreedy(nums: number[]): boolean {
   let goalPostIndex = nums.length - 1;
 
-  // go in reverse and move the goalpost if the previous index can get us to the current goalpost
+  // go in reverse and move the goalpost. if the previous index can get us to the current goalpost
   for (let i = nums.length - 1; i >= 0; i--) {
     // can the current index and value take me past the goalpost?
     if (i + nums[i] >= goalPostIndex) {
+      // yes, so the goalpost comes closer to the start
       goalPostIndex = i;
     }
   }
