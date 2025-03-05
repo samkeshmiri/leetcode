@@ -8,7 +8,7 @@ function twoSum(numbers: number[], target: number): number[] {
     const sum = numbers[firstPointer] + numbers[secondPointer];
 
     if (sum === target) {
-      return [firstPointer + 1, secondPointer + 1];
+      return [firstPointer + 1, secondPointer + 1]; // 1 indexed array result
     }
 
     if (sum > target) {
