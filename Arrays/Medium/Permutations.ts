@@ -1,3 +1,5 @@
+// 46. Permutations
+
 function permute(nums: number[]): number[][] {
   let result = [];
   let solution = [];
