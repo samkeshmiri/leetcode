@@ -19,4 +19,22 @@ function maxBottlesDrunk(numBottles: number, numExchange: number): number {
   return bottlesDrunk;
 }
 
-console.log(maxBottlesDrunk(13, 6)); // 15
+// optimised
+function maxBottlesDrunkOptimised(
+  numBottles: number,
+  numExchange: number
+): number {
+  let drunk = numBottles;
+  let empty = numBottles;
+
+  while (empty >= numExchange) {
+    drunk += 1;
+    empty -= numExchange - 1;
+    numExchange += 1;
+  }
+
+  return drunk;
+}
+
+// console.log(maxBottlesDrunk(13, 6)); // 15
+console.log(maxBottlesDrunkOptimised(13, 6)); // 15
