@@ -1,0 +1,25 @@
+Arrays/Medium/MaximumNumberOfJumpsToReachTheLastIndex.ts
+  h_96125ec32a2ecd 1-5,15,18-21,23-24
+  s_62e6cf5519d1b8::t_3b644989ef1f56 6-14,16-17,22,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "797df5a309cbc9994df7ea390e89303c4f2243ee",
+  "prompts": {},
+  "humans": {
+    "h_96125ec32a2ecd": {
+      "author": "Sam Keshmiri <samkeshmiri94@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_62e6cf5519d1b8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e791a-39cb-70a3-a85d-786817cd5a3a",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Sam Keshmiri <samkeshmiri94@gmail.com>"
+    }
+  }
+}
