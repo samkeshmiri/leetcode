@@ -1,0 +1,14 @@
+Arrays/Medium/DestroyingAsteroids.ts
+  h_96125ec32a2ecd 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b7fb124a82636181deaef2b8e5310bfa0a535422",
+  "prompts": {},
+  "humans": {
+    "h_96125ec32a2ecd": {
+      "author": "Sam Keshmiri <samkeshmiri94@gmail.com>"
+    }
+  }
+}
